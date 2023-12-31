@@ -13,8 +13,8 @@ RUN npm ci -f
 ## Bundle app source
 COPY . .
 
-ENV NODE_TLS_REJECT_UNAUTHORIZED=0
-ENV NODE_OPTIONS=-openssl-legacy-provider
+# ENV NODE_TLS_REJECT_UNAUTHORIZED=0
+# ENV NODE_OPTIONS=-openssl-legacy-provider
 
 RUN ionic build
 ### Run 
